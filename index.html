@@ -9,20 +9,19 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles/base.css">
   <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
   <header>
-    <img src="images/logo.svg" alt="Ashley Kamujoma personal logo" width="60" height="60" class="logo">
-    <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+    <span id="course-title">WDD 131: Dynamic Web Fundamentals</span>
 
     <nav>
       <ul>
         <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a></li>
-        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">Canvas</a></li>
+        <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener">I-Learn</a></li>
         <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank" rel="noopener">Scripture</a></li>
         <li><a href="final-project/">Final Project</a></li>
       </ul>
@@ -32,26 +31,48 @@
   <main>
     <h1>Ashley Kamujoma</h1>
 
-    <section class="card">
-      <h2>What I Do</h2>
-      <img src="images/card-work.svg" alt="Illustration of a laptop and notebook on a desk" width="400" height="260" loading="lazy">
-      <p>I work as a Registration Support Agent at BYU Pathway Worldwide, helping students
-        navigate enrollment and stay on track toward their goals. Before that, I worked in
-        quality assurance and as an indexing specialist, so I've spent a lot of time thinking
-        about clear processes, accuracy, and helping people succeed.</p>
-    </section>
+    <div class="card-grid">
+      <section class="card">
+        <h2>About Me</h2>
 
-    <section class="card">
-      <h2>Why I'm Learning to Code</h2>
-      <img src="images/card-studies.svg" alt="Illustration of code brackets and an open book" width="400" height="260" loading="lazy">
-      <p>I'm studying Web and Computer Programming at BYU-Idaho because I want to build tools
-        that make everyday work easier, from small dashboards to full applications. This course
-        is my starting point for turning ideas into real, working websites.</p>
-    </section>
+        <div class="about-content">
+          <p>My name is Ashley and I go by Ashley. I was born and raised in Bulawayo, Zimbabwe,
+            where my family still lives. I am currently working as a Registration Support Agent
+            at BYU Pathway Worldwide, and I'm studying Web and Computer Programming at
+            BYU-Idaho. I love learning new things and turning ideas into real, working
+            websites.</p>
+          <img src="images/portrait.jpg" alt="Portrait of Ashley Kamujoma" class="portrait" loading="lazy">
+        </div>
+
+        <h3>Bulawayo, Zimbabwe</h3>
+        <div class="origin-content">
+          <figure class="flag-figure">
+            <img src="images/flag.svg" alt="The flag of Zimbabwe" class="flag" loading="lazy">
+            <figcaption>Official flag of Zimbabwe</figcaption>
+          </figure>
+          <p>Zimbabwe is a landlocked country in southern Africa. Bulawayo, my home city, is the
+            country's second largest and is known as the "City of Kings and Queens." Zimbabwe is
+            home to Victoria Falls, one of the largest waterfalls in the world, and to Great
+            Zimbabwe, the stone ruins of a medieval city that gave the country its name.</p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Web Dev Resources</h2>
+        <img src="images/resources-icon.svg" alt="Icon of a laptop displaying code brackets" class="resources-icon" loading="lazy">
+        <ul>
+          <li><a href="https://dev.to/" target="_blank" rel="noopener">Dev.to Community</a></li>
+          <li><a href="https://www.smashingmagazine.com/" target="_blank" rel="noopener">Smashing Magazine</a></li>
+          <li><a href="https://css-tricks.com/" target="_blank" rel="noopener">CSS-Tricks</a></li>
+          <li><a href="https://www.w3schools.com/" target="_blank" rel="noopener">W3Schools</a></li>
+          <li><a href="https://www.udemy.com/" target="_blank" rel="noopener">Udemy</a></li>
+        </ul>
+      </section>
+    </div>
   </main>
 
   <footer>
-    <p>&copy; <span id="currentyear"></span> Ashley Kamujoma, Zimbabwe</p>
+    <p>&copy;<span id="currentyear"></span> Ashley Kamujoma &bull; Zimbabwe</p>
     <p id="lastModified"></p>
   </footer>
 </body>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="resIconTitle">
+  <title id="resIconTitle">Icon of a laptop displaying code brackets</title>
+  <rect x="15" y="20" width="90" height="60" rx="6" fill="#1e3a5f"/>
+  <rect x="23" y="28" width="74" height="44" rx="3" fill="#eff6ff"/>
+  <text x="60" y="58" font-family="monospace" font-size="24" fill="#1e3a5f" text-anchor="middle">&lt;/&gt;</text>
+  <rect x="5" y="80" width="110" height="10" rx="4" fill="#334155"/>
+</svg>
