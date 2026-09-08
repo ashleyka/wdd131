@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 260" width="400" height="260" role="img" aria-labelledby="cardWorkTitle">
+  <title id="cardWorkTitle">Illustration of a desk with a laptop and open notebook</title>
+  <rect width="400" height="260" fill="#1f2937"/>
+  <rect x="40" y="150" width="320" height="14" rx="4" fill="#374151"/>
+  <rect x="70" y="90" width="180" height="70" rx="8" fill="#4b5563"/>
+  <rect x="82" y="102" width="156" height="46" rx="4" fill="#93c5fd"/>
+  <rect x="130" y="160" width="60" height="10" fill="#374151"/>
+  <rect x="270" y="120" width="70" height="40" rx="4" fill="#f3f4f6"/>
+  <path d="M270 120 L305 100 L340 120 Z" fill="#e5e7eb"/>
+  <circle cx="200" cy="55" r="28" fill="#fbbf24"/>
+  <rect x="185" y="83" width="30" height="8" fill="#fbbf24" opacity="0.6"/>
+</svg>

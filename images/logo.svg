@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60" role="img" aria-labelledby="logoTitle">
+  <title id="logoTitle">Personal logo, letter A in a circle</title>
+  <circle cx="30" cy="30" r="28" fill="#0f172a" stroke="#38bdf8" stroke-width="3"/>
+  <text x="30" y="40" font-family="Georgia, serif" font-size="28" fill="#38bdf8" text-anchor="middle">A</text>
+</svg>
