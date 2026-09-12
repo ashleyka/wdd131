@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-labelledby="portraitTitle">
+  <title id="portraitTitle">Portrait-style illustration of Ashley</title>
+  <defs>
+    <clipPath id="circleClip">
+      <circle cx="200" cy="200" r="190"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#circleClip)">
+    <rect width="400" height="400" fill="#0f172a"/>
+    <rect width="400" height="400" fill="#38bdf8" opacity="0.15"/>
+    <circle cx="200" cy="160" r="80" fill="#f2c9a0"/>
+    <path d="M200 90 C150 90 130 130 135 175 C160 165 175 150 180 130 C195 160 230 175 265 175 C270 130 250 90 200 90 Z" fill="#3b2417"/>
+    <path d="M90 400 C90 300 140 250 200 250 C260 250 310 300 310 400 Z" fill="#1e3a8a"/>
+  </g>
+  <circle cx="200" cy="200" r="190" fill="none" stroke="#38bdf8" stroke-width="6"/>
+</svg>

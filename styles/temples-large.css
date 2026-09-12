@@ -1,0 +1,40 @@
+/* Loaded only for screens at least 640px wide (see the <link media> attribute in temples.html) */
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.header-bar {
+  padding: 0.85rem 0;
+}
+
+.hamburger {
+  display: none;
+}
+
+nav {
+  max-height: none;
+  overflow: visible;
+  background-color: transparent;
+}
+
+nav ul {
+  flex-direction: row;
+}
+
+nav a {
+  border-top: none;
+  padding: 0.85rem 1.1rem;
+}
+
+main {
+  max-width: 1000px;
+}
+
+.temple-grid {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+}

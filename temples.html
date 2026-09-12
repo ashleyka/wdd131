@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Temple Album – Ashley Kamujoma</title>
+  <meta name="description" content="A responsive temple picture album page built for WDD 131 by Ashley Kamujoma, a BYU-Idaho web and computer programming student.">
+  <meta name="author" content="Ashley Kamujoma">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="screen and (min-width: 640px)">
+
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <p class="site-title">Temple Album</p>
+      <button id="menuBtn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-icon">&#9776;</span>
+      </button>
+    </div>
+
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="#" data-filter="all" class="active">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-size="large">Large</a></li>
+        <li><a href="#" data-size="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <div class="temple-grid">
+      <figure data-era="old">
+        <img src="https://www.churchofjesuschrist.org/imgs/64de5983126b11eca393eeeeac1e50dfc2db6c7e/full/480%2C/0/default" alt="The Salt Lake Temple" loading="lazy">
+        <figcaption>Salt Lake Temple</figcaption>
+      </figure>
+      <figure data-era="new">
+        <img src="https://www.churchofjesuschrist.org/imgs/e97d43cdfab131f3ffac633cd7c952de861d51c8/full/480%2C/0/default" alt="The Provo City Center Temple" loading="lazy">
+        <figcaption>Provo City Center Temple</figcaption>
+      </figure>
+      <figure data-era="old">
+        <img src="https://www.churchofjesuschrist.org/imgs/b378c080e5880db5bf2bcf6d828b2f3fd59820de/full/480%2C/0/default" alt="The Johannesburg South Africa Temple" loading="lazy">
+        <figcaption>Johannesburg South Africa Temple</figcaption>
+      </figure>
+      <figure data-era="new">
+        <img src="https://www.churchofjesuschrist.org/imgs/7cf8e8b9e5a5a1f379d4e2c9bc2166f9c6007aca/full/480%2C/0/default" alt="The Accra Ghana Temple" loading="lazy">
+        <figcaption>Accra Ghana Temple</figcaption>
+      </figure>
+      <figure data-era="new">
+        <img src="https://www.churchofjesuschrist.org/imgs/8cae06798bb811ec8827eeeeac1ee76df4b07c85/full/480%2C/0/default" alt="The Kinshasa DR Congo Temple" loading="lazy">
+        <figcaption>Kinshasa DR Congo Temple</figcaption>
+      </figure>
+      <figure data-era="new">
+        <img src="https://www.churchofjesuschrist.org/imgs/8b3f1b895a7c92ee66c2d0c7e78606f75f0d0cc8/full/480%2C/0/default" alt="The Durban South Africa Temple" loading="lazy">
+        <figcaption>Durban South Africa Temple</figcaption>
+      </figure>
+      <figure data-era="old">
+        <img src="https://www.churchofjesuschrist.org/imgs/914ec5701c2435b4cfa50668de85df2aebf68f26/full/480%2C/0/default" alt="The London England Temple" loading="lazy">
+        <figcaption>London England Temple</figcaption>
+      </figure>
+      <figure data-era="new">
+        <img src="https://www.churchofjesuschrist.org/imgs/17e2c70d687fffedfe115197e57fa8f5d1d369bb/full/480%2C/0/default" alt="The Rome Italy Temple" loading="lazy">
+        <figcaption>Rome Italy Temple</figcaption>
+      </figure>
+      <figure data-era="new">
+        <img src="https://www.churchofjesuschrist.org/imgs/xbrnlkgvoumomut7itk86rrpepzrej7pax1mvuzz/full/480%2C/0/default" alt="The Nairobi Kenya Temple" loading="lazy">
+        <figcaption>Nairobi Kenya Temple</figcaption>
+      </figure>
+      <figure data-era="new">
+        <img src="https://www.churchofjesuschrist.org/imgs/qmtphag0tdp0sot6yoiejjv9wx6arx7gcu0k4vl0/full/480%2C/0/default" alt="The Harare Zimbabwe Temple" loading="lazy">
+        <figcaption>Harare Zimbabwe Temple</figcaption>
+      </figure>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> Ashley Kamujoma &bull; Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

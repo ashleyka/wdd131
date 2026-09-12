@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-labelledby="templeTitle">
+  <title id="templeTitle">Illustration of a temple building with a central spire</title>
+  <rect width="400" height="300" fill="#cfe8f7"/>
+  <rect y="230" width="400" height="70" fill="#a9d194"/>
+  <rect x="60" y="150" width="280" height="110" fill="#f5f5f0"/>
+  <rect x="60" y="150" width="280" height="14" fill="#e2e2da"/>
+  <rect x="90" y="180" width="26" height="80" fill="#dcdcd2"/>
+  <rect x="140" y="180" width="26" height="80" fill="#dcdcd2"/>
+  <rect x="190" y="170" width="20" height="90" fill="#e8e8e0"/>
+  <rect x="234" y="180" width="26" height="80" fill="#dcdcd2"/>
+  <rect x="284" y="180" width="26" height="80" fill="#dcdcd2"/>
+  <polygon points="200,60 235,150 165,150" fill="#f5f5f0"/>
+  <rect x="192" y="30" width="16" height="35" fill="#f5f5f0"/>
+  <polygon points="200,10 210,32 190,32" fill="#f5f5f0"/>
+  <circle cx="200" cy="18" r="4" fill="#d4af37"/>
+</svg>
