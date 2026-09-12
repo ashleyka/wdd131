@@ -107,7 +107,7 @@ nav a:focus {
 }
 
 nav a.active {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: #395272;
   box-shadow: inset 3px 0 0 var(--color-accent);
 }
 
