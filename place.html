@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Zimbabwe – Ashley Kamujoma</title>
+  <meta name="description" content="A responsive country page about Zimbabwe, built for WDD 131 by Ashley Kamujoma.">
+  <meta name="author" content="Ashley Kamujoma">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <p class="site-title">Zimbabwe</p>
+    <p class="site-tagline">The Heart of Africa</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <picture>
+        <source media="(min-width: 640px)" srcset="https://images.unsplash.com/photo-1636291549333-1f52cbd09393?w=1600&amp;h=700&amp;fit=crop&amp;fm=webp&amp;q=75">
+        <img src="https://images.unsplash.com/photo-1636291549333-1f52cbd09393?w=800&amp;h=1000&amp;fit=crop&amp;fm=webp&amp;q=75" alt="Victoria Falls on the Zambezi River, Zimbabwe" class="hero-img" loading="eager">
+      </picture>
+      <div class="hero-caption">
+        <h1>Welcome to Zimbabwe</h1>
+        <p>Home of Victoria Falls, Great Zimbabwe, and warm Ubuntu hospitality</p>
+      </div>
+      <p class="photo-credit">Photo: Victoria Falls, via Unsplash</p>
+    </section>
+
+    <section class="intro">
+      <h2>About Zimbabwe</h2>
+      <p>Zimbabwe is a landlocked country in southern Africa, bordered by South Africa, Botswana, Zambia,
+        and Mozambique. It is home to Victoria Falls, one of the Seven Natural Wonders of the World, and to
+        the stone ruins of Great Zimbabwe, a medieval city that gave the country its name. From the granite
+        hills of Bulawayo to the highlands around Harare, Zimbabwe's landscapes and wildlife make it one of
+        southern Africa's most rewarding places to visit.</p>
+    </section>
+
+    <section class="data-grid">
+      <h2>Zimbabwe by the Numbers</h2>
+      <div class="facts">
+        <div class="fact-card">
+          <span class="fact-icon" aria-hidden="true">&#127968;</span>
+          <p class="fact-label">Capital</p>
+          <p class="fact-value">Harare</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon" aria-hidden="true">&#128101;</span>
+          <p class="fact-label">Population</p>
+          <p class="fact-value">~16.3 million</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon" aria-hidden="true">&#128506;&#65039;</span>
+          <p class="fact-label">Area</p>
+          <p class="fact-value">390,757 km&sup2;</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon" aria-hidden="true">&#128172;</span>
+          <p class="fact-label">Official Languages</p>
+          <p class="fact-value">16, incl. English, Shona, Ndebele</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon" aria-hidden="true">&#128176;</span>
+          <p class="fact-label">Currency</p>
+          <p class="fact-value">Zimbabwe Gold (ZiG)</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon" aria-hidden="true">&#127917;</span>
+          <p class="fact-label">Independence</p>
+          <p class="fact-value">18 April 1980</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="weather">
+      <h2 class="weather-heading">Weather</h2>
+      <img src="images/weather-icon.svg" alt="Partly cloudy" class="weather-icon-mobile">
+
+      <div class="weather-stats">
+        <div class="weather-stat">
+          <p class="stat-label">Temperature</p>
+          <p class="stat-value"><span id="temp">8</span>&deg;C</p>
+        </div>
+        <div class="weather-stat">
+          <p class="stat-label">Wind Speed</p>
+          <p class="stat-value"><span id="wind">15</span> km/h</p>
+        </div>
+        <div class="weather-stat">
+          <p class="stat-label">Wind Chill</p>
+          <p class="stat-value"><span id="windChill"></span>&deg;C</p>
+        </div>
+      </div>
+      <p class="weather-description">Harare mornings in July are crisp and breezy — pack a light jacket if
+        you're visiting during the dry season.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> &#129302; Ashley Kamujoma &#129302; Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>

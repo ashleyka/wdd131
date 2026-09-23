@@ -1,0 +1,278 @@
+/* ===== Variables — colors drawn from Zimbabwe's flag ===== */
+:root {
+  --color-green: #006400;
+  --color-gold: #FFD200;
+  --color-red: #D40000;
+  --color-black: #171412;
+  --color-bg: #f7f6f2;
+  --color-surface: #ffffff;
+  --color-text: #262626;
+  --color-muted: #57534e;
+  --color-border: #e2e5e9;
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Source Sans 3', sans-serif;
+}
+
+/* ===== Reset ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: var(--color-green);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.1rem 1rem;
+}
+
+.site-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+}
+
+.site-tagline {
+  font-size: 0.9rem;
+  color: var(--color-gold);
+  margin-top: 0.2rem;
+}
+
+/* ===== Hero ===== */
+.hero {
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+}
+
+.hero-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.hero-caption h1 {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+.hero-caption p {
+  font-size: 0.95rem;
+  max-width: 30ch;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.photo-credit {
+  position: absolute;
+  bottom: 0.4rem;
+  right: 0.6rem;
+  font-size: 0.65rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.15rem 0.5rem;
+  border-radius: 4px;
+}
+
+/* ===== Main sections ===== */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+section {
+  margin: 2rem 0;
+}
+
+section h2 {
+  font-family: var(--font-heading);
+  color: var(--color-green);
+  font-size: 1.3rem;
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+
+.intro p {
+  color: var(--color-text);
+}
+
+/* ===== Data grid ===== */
+.facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.fact-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-top: 4px solid var(--color-gold);
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.fact-icon {
+  font-size: 1.6rem;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.fact-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--color-muted);
+  margin-bottom: 0.3rem;
+}
+
+.fact-value {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* ===== Weather ===== */
+.weather {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.weather-icon-mobile {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem;
+}
+
+.weather-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.stat-label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-bottom: 0.25rem;
+}
+
+.stat-value {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  color: var(--color-green);
+}
+
+.weather-description {
+  color: var(--color-text);
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--color-black);
+  color: #ffffff;
+  text-align: center;
+  padding: 1.1rem 1rem;
+  font-size: 0.85rem;
+  margin-top: 2.5rem;
+}
+
+footer p {
+  margin: 0.15rem 0;
+}
+
+#lastModified {
+  color: var(--color-gold);
+  font-size: 0.75rem;
+}
+
+/* ===== Wider view ===== */
+@media (min-width: 640px) {
+  header {
+    padding: 1.5rem 1rem;
+  }
+
+  .site-title {
+    font-size: 2.1rem;
+  }
+
+  .hero-img {
+    height: 480px;
+  }
+
+  .hero-caption h1 {
+    font-size: 2.6rem;
+  }
+
+  .hero-caption p {
+    font-size: 1.15rem;
+    max-width: 40ch;
+  }
+
+  main {
+    max-width: 1100px;
+  }
+
+  .facts {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .weather {
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .weather-heading {
+    text-align: left;
+  }
+
+  /* Pseudo-element weather icon, required for the wider view */
+  .weather-heading::after {
+    content: "\26C5";
+    margin-left: 0.6rem;
+    font-size: 1.4rem;
+  }
+
+  .weather-icon-mobile {
+    display: none;
+  }
+
+  .weather-stats {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 500px;
+  }
+}
