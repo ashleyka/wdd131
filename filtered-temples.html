@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Filtered Temple Album – Ashley Kamujoma</title>
+  <meta name="description" content="A dynamic, filterable temple picture album built for WDD 131 by Ashley Kamujoma, a BYU-Idaho web and computer programming student.">
+  <meta name="author" content="Ashley Kamujoma">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="header-bar">
+      <p class="site-title">Temple Album</p>
+      <button id="menuBtn" class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-icon">&#9776;</span>
+      </button>
+    </div>
+
+    <nav id="primaryNav">
+      <ul>
+        <li><a href="#" data-filter="all" class="active">Home</a></li>
+        <li><a href="#" data-filter="old">Old</a></li>
+        <li><a href="#" data-filter="new">New</a></li>
+        <li><a href="#" data-filter="large">Large</a></li>
+        <li><a href="#" data-filter="small">Small</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <!-- Temple cards are generated dynamically by filtered-temples.js -->
+    <div class="temple-grid" id="templeGrid"></div>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> &#129302; Ashley Kamujoma &#129302; Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
