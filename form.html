@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Review Form - Ashley Kamujoma</title>
+  <meta name="description" content="Product Review Form for WDD 131 by Ashley Kamujoma">
+  <meta name="author" content="Ashley Kamujoma">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/form.css">
+  
+  <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/form.js" defer></script>
+</head>
+<body>
+  <header>
+    <span id="course-title">Product Review</span>
+  </header>
+
+  <main>
+    <h1>Product Review Form</h1>
+    <form method="get" action="review.html">
+      <fieldset>
+        <legend>Review Details</legend>
+        
+        <label for="product">Product Name <span class="required">*</span></label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <label>Overall Rating <span class="required">*</span></label>
+        <div class="rating-group">
+          <label><input type="radio" name="rating" value="1" required> 1 ☆</label>
+          <label><input type="radio" name="rating" value="2" required> 2 ☆</label>
+          <label><input type="radio" name="rating" value="3" required> 3 ☆</label>
+          <label><input type="radio" name="rating" value="4" required> 4 ☆</label>
+          <label><input type="radio" name="rating" value="5" required> 5 ☆</label>
+        </div>
+
+        <label for="date_installed">Date of Installation <span class="required">*</span></label>
+        <input type="date" id="date_installed" name="date_installed" required>
+
+        <label>Which features did you find useful? (Check all that apply)</label>
+        <div class="features-group">
+          <label><input type="checkbox" name="features" value="durability"> Durability</label>
+          <label><input type="checkbox" name="features" value="ease_of_use"> Ease of Use</label>
+          <label><input type="checkbox" name="features" value="performance"> Performance</label>
+          <label><input type="checkbox" name="features" value="design"> Design</label>
+        </div>
+
+        <label for="written_review">Written Review</label>
+        <textarea id="written_review" name="written_review" rows="4" placeholder="Write your review here..."></textarea>
+
+        <label for="user_name">Your Name</label>
+        <input type="text" id="user_name" name="user_name">
+      </fieldset>
+
+      <input type="submit" value="Post Review">
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> &#129302; Ashley Kamujoma &#129302; Zimbabwe</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
