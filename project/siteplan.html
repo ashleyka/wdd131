@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Plan | Benchtop Repair</title>
+  <meta name="description" content="Website plan for Benchtop Repair, including the site name, purpose, scenarios, color schema, typography and wireframes.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/plan.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>Benchtop Repair</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Book a repair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-intro">
+      <h1>Site plan: Benchtop Repair</h1>
+      <p>This plan covers the name, purpose, audience, colors, fonts and layout for my computer repair website.</p>
+    </div>
+
+    <section class="section" aria-labelledby="name-heading">
+      <div class="wrap">
+        <h2 id="name-heading">Site name</h2>
+        <img src="images/logo.svg" alt="Benchtop Repair logo, a green circuit chip with an amber center" width="96" height="96">
+        <p><strong>Benchtop Repair</strong></p>
+        <p>A technician fixes computers on a workbench, so the name tells visitors that real hands-on repair happens here. It is short, easy to remember and easy to spell.</p>
+        <p>Optional domain: <code>benchtoprepair.com</code></p>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="purpose-heading">
+      <div class="wrap">
+        <h2 id="purpose-heading">Site purpose</h2>
+        <p>The site is the online front desk for a local computer repair shop. It lists repair services with starting prices and turnaround times, helps visitors guess what is wrong with a symptom helper, and lets them send a repair request and see their saved requests.</p>
+        <p>The pages are Home, Services, Book a repair and References.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="scenarios-heading">
+      <div class="wrap">
+        <h2 id="scenarios-heading">Scenarios</h2>
+        <p>Questions that a visitor from the target audience will ask. The target audience is students, families and small business owners who rely on a computer every day and are not technical.</p>
+        <ul class="plain-list">
+          <li>My laptop screen is cracked. How much will it cost and how long will it take?</li>
+          <li>My computer is very slow. Is it worth fixing, or should I buy a new one?</li>
+          <li>Can I get my photos back from a drive that stopped working?</li>
+          <li>When is the shop open, and how do I book a drop-off time?</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="color-heading">
+      <div class="wrap">
+        <h2 id="color-heading">Color schema</h2>
+        <p>The colors come from a repair bench: dark workshop ink, the green of a circuit board and the amber of a status light.</p>
+        <div class="table-scroll">
+          <table class="plan-table">
+            <caption>Site colors and where they are used</caption>
+            <thead>
+              <tr><th scope="col">Swatch</th><th scope="col">Name</th><th scope="col">Where it is used</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="swatch swatch-ink"></td><th scope="row">Bench ink<br>#12202E</th><td>Header, footer, hero background and body text</td></tr>
+              <tr><td class="swatch swatch-board"></td><th scope="row">Circuit green<br>#0D6B52</th><td>Links, selected filters and step numbers</td></tr>
+              <tr><td class="swatch swatch-led"></td><th scope="row">Status amber<br>#F4B73C</th><td>Buttons and the current page marker</td></tr>
+              <tr><td class="swatch swatch-paper"></td><th scope="row">Paper<br>#F2F6F3</th><td>Page background</td></tr>
+              <tr><td class="swatch swatch-muted"></td><th scope="row">Slate<br>#46545F</th><td>Hints, prices and other supporting text</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="type-heading">
+      <div class="wrap">
+        <h2 id="type-heading">Typography</h2>
+        <div class="type-sample">
+          <p class="type-heading">Bricolage Grotesque</p>
+          <p class="type-body">Used for the site name and all headings. It has a confident, slightly mechanical look that suits a workshop.</p>
+        </div>
+        <div class="type-sample">
+          <p class="type-body"><strong>Source Sans 3</strong></p>
+          <p class="type-body">Used for body text, navigation, buttons and forms. It stays clear and readable at small sizes on phones. Both fonts fall back to the system sans-serif font if they cannot load.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" aria-labelledby="wireframe-heading">
+      <div class="wrap">
+        <h2 id="wireframe-heading">Wireframes</h2>
+        <p>Home page layout. On mobile everything stacks in one column and the menu collapses. On wider screens the hero splits into text and image, and the steps and cards sit in rows.</p>
+        <div class="wireframes">
+          <figure>
+            <svg viewBox="0 0 200 380" role="img" aria-labelledby="wf-m-title">
+            <title id="wf-m-title">Mobile home page wireframe</title>
+            <rect class="wf-frame" x="1" y="1" width="198" height="378" rx="10"/>
+            <rect class="wf-dark" x="1" y="1" width="198" height="34" rx="10"/>
+            <text class="wf-label wf-label-light" x="12" y="23">Logo</text>
+            <text class="wf-label wf-label-light" x="150" y="23">Menu</text>
+            <rect class="wf-dark" x="1" y="35" width="198" height="110"/>
+            <text class="wf-label wf-label-light" x="14" y="62">Headline</text>
+            <rect class="wf-block" x="14" y="72" width="130" height="8"/>
+            <rect class="wf-block" x="14" y="86" width="100" height="8"/>
+            <rect class="wf-accent" x="14" y="104" width="70" height="22" rx="4"/>
+            <text class="wf-label" x="22" y="119">Book</text>
+            <text class="wf-label" x="14" y="168">Symptom helper</text>
+            <rect class="wf-block" x="14" y="176" width="172" height="22" rx="4"/>
+            <text class="wf-label" x="14" y="220">Steps</text>
+            <rect class="wf-block" x="14" y="228" width="172" height="26" rx="4"/>
+            <rect class="wf-block" x="14" y="260" width="172" height="26" rx="4"/>
+            <text class="wf-label" x="14" y="306">Popular repairs</text>
+            <rect class="wf-block" x="14" y="314" width="172" height="26" rx="4"/>
+            <rect class="wf-dark" x="1" y="352" width="198" height="27" rx="10"/>
+            <text class="wf-label wf-label-light" x="14" y="370">Footer</text>
+          </svg>
+            <figcaption>Mobile view</figcaption>
+          </figure>
+          <figure>
+            <svg viewBox="0 0 480 320" role="img" aria-labelledby="wf-d-title">
+            <title id="wf-d-title">Desktop home page wireframe</title>
+            <rect class="wf-frame" x="1" y="1" width="478" height="318" rx="8"/>
+            <rect class="wf-dark" x="1" y="1" width="478" height="34" rx="8"/>
+            <text class="wf-label wf-label-light" x="14" y="23">Logo</text>
+            <text class="wf-label wf-label-light" x="320" y="23">Home</text>
+            <text class="wf-label wf-label-light" x="368" y="23">Services</text>
+            <text class="wf-label wf-label-light" x="428" y="23">Book</text>
+            <rect class="wf-dark" x="1" y="35" width="478" height="110"/>
+            <text class="wf-label wf-label-light" x="20" y="64">Headline</text>
+            <rect class="wf-block" x="20" y="74" width="180" height="8"/>
+            <rect class="wf-block" x="20" y="88" width="150" height="8"/>
+            <rect class="wf-accent" x="20" y="108" width="80" height="22" rx="4"/>
+            <text class="wf-label" x="32" y="123">Book</text>
+            <rect class="wf-green" x="270" y="48" width="180" height="84" rx="6"/>
+            <text class="wf-label wf-label-light" x="334" y="94">Hero image</text>
+            <text class="wf-label" x="20" y="170">Symptom helper</text>
+            <rect class="wf-block" x="20" y="178" width="200" height="22" rx="4"/>
+            <rect class="wf-block" x="240" y="178" width="220" height="22" rx="4"/>
+            <text class="wf-label" x="20" y="222">How a repair works</text>
+            <rect class="wf-block" x="20" y="230" width="100" height="22" rx="4"/>
+            <rect class="wf-block" x="130" y="230" width="100" height="22" rx="4"/>
+            <rect class="wf-block" x="240" y="230" width="100" height="22" rx="4"/>
+            <rect class="wf-block" x="350" y="230" width="100" height="22" rx="4"/>
+            <text class="wf-label" x="20" y="274">Popular repairs (three cards)</text>
+            <rect class="wf-dark" x="1" y="292" width="478" height="27" rx="8"/>
+            <text class="wf-label wf-label-light" x="14" y="310">Footer</text>
+          </svg>
+            <figcaption>Desktop view</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p id="copyright">© Benchtop Repair. All rights reserved.</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+</body>
+</html>

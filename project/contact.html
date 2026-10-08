@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Repair | Benchtop Repair</title>
+  <meta name="description" content="Send a repair request to Benchtop Repair: choose your device, the service you need and a drop-off date.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>Benchtop Repair</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html" aria-current="page">Book a repair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-intro">
+      <h1>Book a repair</h1>
+      <p>Tell us what is wrong and when you can bring it in. We save your request and confirm it on this page.</p>
+    </div>
+
+    <section class="section" aria-labelledby="form-heading">
+      <div class="wrap two-column">
+        <div>
+          <h2 id="form-heading">Repair request</h2>
+          <p id="confirmation" class="notice" role="status" tabindex="-1" hidden></p>
+          <form id="booking-form" action="contact.html" method="post">
+            <div class="field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone number <span class="hint">Optional</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel">
+            </div>
+            <div class="field">
+              <label for="device">Device type</label>
+              <select id="device" name="device" required>
+                <option value="">Choose a device</option>
+                <option value="laptop">Laptop</option>
+                <option value="desktop">Desktop</option>
+                <option value="all-in-one">All-in-one</option>
+                <option value="drive">External drive</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="service">Service</label>
+              <select id="service" name="service" required>
+                <option value="">Choose a service</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="dropoff">Preferred drop-off date <span class="hint">Closed on Sundays</span></label>
+              <input type="date" id="dropoff" name="dropoff" required>
+            </div>
+            <fieldset>
+              <legend>How fast do you need it?</legend>
+              <label class="choice"><input type="radio" name="urgency" value="standard" checked> Standard, usually 2 to 3 business days</label>
+              <label class="choice"><input type="radio" name="urgency" value="express"> Express, next business day for an extra $20</label>
+            </fieldset>
+            <div class="field">
+              <label for="details">What is the problem? <span class="hint">At least 10 characters, up to 500</span></label>
+              <textarea id="details" name="details" rows="5" minlength="10" maxlength="500" required></textarea>
+            </div>
+            <label class="choice"><input type="checkbox" name="updates" value="yes"> Email me when my device is ready</label>
+            <button class="button" type="submit">Send repair request</button>
+          </form>
+        </div>
+
+        <aside>
+          <h2>Shop hours</h2>
+          <ul class="plain-list">
+            <li>Monday to Friday: 8:00 am to 5:30 pm</li>
+            <li>Saturday: 9:00 am to 1:00 pm</li>
+            <li>Sunday: closed</li>
+          </ul>
+          <p>Questions first? Email <a href="mailto:hello@benchtoprepair.example">hello@benchtoprepair.example</a>.</p>
+
+          <section id="request-history" hidden aria-labelledby="history-heading">
+            <h2 id="history-heading">Your saved requests</h2>
+            <ul class="request-list" id="request-list"></ul>
+            <button class="button button-small button-quiet" type="button" id="clear-history">Clear saved requests</button>
+          </section>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p id="copyright">© Benchtop Repair. All rights reserved.</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/contact.js"></script>
+</body>
+</html>

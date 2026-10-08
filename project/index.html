@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Benchtop Repair | Computer Repair You Can Trust</title>
+  <meta name="description" content="Benchtop Repair fixes laptops and desktops, removes viruses and recovers lost files, with a free diagnosis and a clear quote.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>Benchtop Repair</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Book a repair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <div>
+          <h1>Computer broken? Bring it to the bench.</h1>
+          <p>Benchtop Repair fixes laptops and desktops, removes viruses and recovers lost files. Every repair starts with a free diagnosis and a clear quote before any work begins.</p>
+          <div class="hero-actions">
+            <a class="button" href="contact.html">Book a repair</a>
+            <a class="button button-outline" href="services.html">See services and prices</a>
+          </div>
+        </div>
+        <img src="images/hero-bench.svg" alt="Laptop on a repair bench with a check mark on the screen and a screwdriver beside it" width="480" height="340">
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>What is your computer doing?</h2>
+        <p>Choose the closest match and we will tell you the most likely cause.</p>
+        <div class="field">
+          <label for="symptom">Symptom</label>
+          <select id="symptom" name="symptom">
+            <option value="">Choose a symptom</option>
+            <option value="slow">It is very slow</option>
+            <option value="no-power">It will not turn on</option>
+            <option value="hot">It gets very hot and loud</option>
+            <option value="popups">Pop-ups keep appearing</option>
+            <option value="cracked">The screen is cracked</option>
+            <option value="clicking">The drive is clicking</option>
+          </select>
+        </div>
+        <div class="notice" id="diagnosis-result" aria-live="polite">Pick a symptom to see the most likely cause.</div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <h2>How a repair works</h2>
+        <ol class="steps">
+          <li>Book online or bring your device to the shop.</li>
+          <li>We run a free diagnosis and find the real problem.</li>
+          <li>You get a quote and approve it before we start.</li>
+          <li>We fix it, test it and call you for pick-up.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2>Popular repairs</h2>
+        <ul class="service-list">
+          <li class="service-card">
+            <img src="images/laptop.svg" alt="Laptop with a cracked screen" width="120" height="120" loading="lazy">
+            <div>
+              <h3>Laptop screen replacement</h3>
+              <p>Cracked or flickering screens swapped for a matching panel.</p>
+              <p class="meta"><span>From $60</span><span>1 to 2 days</span></p>
+            </div>
+          </li>
+          <li class="service-card">
+            <img src="images/shield.svg" alt="Shield with a check mark" width="120" height="120" loading="lazy">
+            <div>
+              <h3>Virus and malware removal</h3>
+              <p>Pop-ups, hijacked browsers and strange programs cleaned out.</p>
+              <p class="meta"><span>From $35</span><span>Same day</span></p>
+            </div>
+          </li>
+          <li class="service-card">
+            <img src="images/drive.svg" alt="Hard drive with a recovery arrow" width="120" height="120" loading="lazy">
+            <div>
+              <h3>Data recovery</h3>
+              <p>We try to get photos and documents back from failing drives.</p>
+              <p class="meta"><span>From $80</span><span>2 to 5 days</span></p>
+            </div>
+          </li>
+        </ul>
+        <p><a href="services.html">View all services</a></p>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <h2>Our promise</h2>
+        <ul class="plain-list">
+          <li>Free diagnosis on every device.</li>
+          <li>A written quote before any work starts.</li>
+          <li>A 30-day warranty on every repair.</li>
+          <li>We return your old parts if you ask.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p id="copyright">© Benchtop Repair. All rights reserved.</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services | Benchtop Repair</title>
+  <meta name="description" content="Browse Benchtop Repair services, from screen and battery replacement to virus removal and data recovery, with starting prices.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="" width="40" height="40">
+        <span>Benchtop Repair</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html" aria-current="page">Services</a></li>
+          <li><a href="contact.html">Book a repair</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="wrap page-intro">
+      <h1>Services and prices</h1>
+      <p>Prices are starting points. After the free diagnosis we give you the final quote, and you decide whether to go ahead.</p>
+    </div>
+
+    <section class="section" aria-labelledby="list-heading">
+      <div class="wrap">
+        <h2 id="list-heading">Choose a repair</h2>
+        <div class="controls">
+          <div class="filters" role="group" aria-label="Filter by type">
+            <button class="filter-button" type="button" data-category="all" aria-pressed="true">All</button>
+            <button class="filter-button" type="button" data-category="hardware" aria-pressed="false">Hardware</button>
+            <button class="filter-button" type="button" data-category="software" aria-pressed="false">Software</button>
+            <button class="filter-button" type="button" data-category="data" aria-pressed="false">Data</button>
+          </div>
+          <div>
+            <label for="sort">Sort by</label>
+            <select id="sort" name="sort">
+              <option value="default">Recommended</option>
+              <option value="price-low">Price, low to high</option>
+              <option value="price-high">Price, high to low</option>
+            </select>
+          </div>
+        </div>
+        <p id="service-status" aria-live="polite"></p>
+        <ul class="service-list" id="service-list"></ul>
+        <noscript><p>Turn on JavaScript to browse the full list, or <a href="contact.html">book a diagnosis</a> and we will advise you.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap two-column">
+        <div>
+          <h2>Devices we repair</h2>
+          <ul class="plain-list">
+            <li>Windows laptops and desktops</li>
+            <li>MacBooks and iMacs</li>
+            <li>All-in-one computers</li>
+            <li>External hard drives and USB drives</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Before you book</h2>
+          <p>Back up what you can, bring your charger, and write down any password we may need. We only open your files if the repair requires it.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p id="copyright">© Benchtop Repair. All rights reserved.</p>
+      <p><a href="references.html">References</a></p>
+    </div>
+  </footer>
+  <script type="module" src="scripts/main.js"></script>
+  <script type="module" src="scripts/services.js"></script>
+</body>
+</html>
